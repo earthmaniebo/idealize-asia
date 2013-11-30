@@ -1,0 +1,95 @@
+/*
+Theme Name: WP Bootstrap
+Theme URI: http://teamtreehouse.com/wordpress-bootstrap-theme-tutorial
+Description: A demo theme built to accompany the Treehouse blog post <a href="http://teamtreehouse.com/wordpress-bootstrap-theme-tutorial">How to Build a WordPress Theme with Bootstrap</a>.
+Author: Zac Gordon
+Author URI: http://teamtreehouse.com/
+Version: 1.0
+Tags: responsive, white, bootstrap
+
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+
+This simple theme was built using the example Bootstrap theme "Basic marketing site" found on the Bootstrap web site http://twitter.github.com/bootstrap/examples/hero.html
+*/
+
+@import url('bootstrap/css/bootstrap.css'); 
+@import url('bootstrap/css/bootstrap-responsive.css'); 
+@media (max-width: 979px) {
+	.trio1stChild
+	{
+		margin: 0px 0px 20px 0px;
+	}
+}
+
+body {
+		padding-bottom: 20px;
+		color: #131314;
+		background: url('img/bg3.png');
+		/*background: #e67e22;*/
+		font-style: Champagne;
+	}
+
+.content {
+	background-color: #fcea7e;
+}
+
+.btn:hover{
+	background-color: #d35400;
+	color: #ecf0f1;
+}
+
+.btn{
+	color: #e67e22;
+}
+
+#carousel-example-generic
+{
+	width: 850px;
+	height: 400px;
+}
+
+@media (min-width: 979px) {
+	.trio1stChild
+	{
+		margin: 0px 0px 0px 50px;
+	}
+
+	#news {
+		margin: 0px 0px 0px 100px;
+	}
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #e67e22;
+}
+
+.thumbpost {
+	float: left;
+	margin: 5px 5px 0 0;
+}
+
+hr {
+height: 3px;
+margin: 50px 0;
+background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+border: 0;
+}
+
+@font-face{
+    font-family: "Champagne";
+    src: url('wp-content/wpbootstrap/bootstrap/fonts/Champagne.ttf');
+}
+
+a {
+	color: #ecf0f1;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #2c3e50;
+	text-decoration: none;
+}
